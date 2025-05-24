@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f8f1e4;
+  color: #241f1e;
+}
+
+h1, h2, h3 {
+  font-family: 'Noto Serif', serif;
+}
+
+header {
+  background-color: rgba(75, 42, 32, 0.5);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.nav a:hover {
+  color: #d7ccc8;
+}
+
+.subtitle {
+  animation: fadeIn 3s ease-in;
+  color: ;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.intro {
+  padding: 2rem ;
+  text-align: center;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 6rem;
+  padding: 2rem;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.card {
+  background: #cabbbb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.gallery-card {
+  background-color: #cabbbb; 
+  border-radius: 12px;
+  padding: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.gallery-card:hover {
+  background-color: rgba(75, 42, 32, 0.5);
+  color: white;
+}
+
+.image img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* City of the Day */
+.city-of-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.city-feature {
+   font-family: 'Lora', serif;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  background-color: #d1c6c6;
+  padding: 25px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(75, 74, 74, 0.1);
+}
+
+
+.city-feature:hover {
+  background-color: rgba(75, 42, 32, 0.5);
+}
+
+.city-image {
+  width: 300px;
+  height: 200px;
+}
+
+.city-info ul {
+  list-style: square inside;
+}
+
+
+.form-section {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(75, 42, 32, 0.5);
+  padding: 2rem;
+  border: 1px solid rgba(75, 42, 32, 0.5);
+  border-radius: 12px;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: ;
+  outline: none;
+}
+
+button {
+  background-color: rgba(75, 42, 32, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(75, 42, 32, 0.5);
+}
